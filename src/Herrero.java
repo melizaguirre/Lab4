@@ -33,9 +33,15 @@ public class Herrero extends Aldeanos{
         return "Herrero{" + super.toString()+ "utensilios=" + utensilios + '}';
     }
      
-    public int daño(){
-        return 0;
+     
+    public int Dano(Aldeanos atacar){
+       if (atacar instanceof Agronomo) return (int)Math.round(Utensilios.getDano*0.01);
+  
+        if (atacar instanceof Pacifista) return (int)Math.round(Utensilios.getDano*0.05);
+               return Utensilios.getDano;        
     }
+    
+    
     
     
 }

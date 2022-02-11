@@ -68,12 +68,6 @@ public abstract class Aldeanos {
         return "Aldenanos{" + "nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", vida=" + vida + ", rango=" + rango + '}';
     }
     
-    public int daño(){
-        return 0;
-    }
-    
-
-    
-    
-    
+    public abstract int Dano(Aldeanos atacar);
+ 
 }

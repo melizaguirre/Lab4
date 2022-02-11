@@ -32,8 +32,10 @@ public class Agronomo extends Aldeanos{
         return "Agronomo{" + super.toString()+ "ataque=" + ataque + '}';
     }
      
-    public int daño(){
-        return 0;
+     public int Dano(Aldeanos atacar){
+      if (atacar instanceof Pacifista) return (int)Math.roud(rastrillo.getDano()*0.05);
+      if (atacar instanceof Normales) return (int)Math.roud(rastrillo.getDano()*0.01);
+      return rastrillo.getDano();
     }
     
     

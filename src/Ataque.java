@@ -10,17 +10,17 @@
  */
 public class Ataque {
     private String ataqueNombre; 
-    private int ataque;
+    private int dano;
     
     public Ataque(){}
     
-    public Ataque (int ataque){
-        this.ataque= ataque;
+    public Ataque (int dano){
+        this.dano= dano;
     }
 
-    public Ataque(String ataqueNombre, int ataque) {
+    public Ataque(String ataqueNombre, int dano) {
         this.ataqueNombre = ataqueNombre;
-        this.ataque = ataque;
+        this.dano = dano;
     }
 
     public String getAtaqueNombre() {
@@ -31,17 +31,17 @@ public class Ataque {
         this.ataqueNombre = ataqueNombre;
     }
 
-    public int getAtaque() {
-        return ataque;
+    public int getDano() {
+        return dano;
     }
 
-    public void setAtaque(int ataque) {
-        this.ataque = ataque;
+    public void setDano(int dano) {
+        this.dano = dano;
     }
 
     @Override
     public String toString() {
-        return "Ataque{" + "ataqueNombre=" + ataqueNombre + ", ataque=" + ataque + '}';
+        return "Ataque{" + "ataqueNombre=" + ataqueNombre + ", Dano=" + dano + '}';
     }
 
    

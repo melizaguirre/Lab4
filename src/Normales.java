@@ -35,8 +35,9 @@ public class Normales extends Aldeanos{
         return "Normales{" + super.toString() + "ataque=" + ataque + '}';
     }
      
-    public int daño(){
-        return 0;
+    public int Dano(Aldeanos atacar){
+      if (atacar instanceof Pacifista) return (int)Math.roud(punolimpio.getDano()*0.05);
+      return punolimpio.getDano();
     }
     
     

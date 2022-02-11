@@ -33,8 +33,11 @@ public class SuperGranjero extends Aldeanos{
         return "SuperGranjero{" +super.toString() + "ataque=" + ataque + '}';
     }
      
-    public int daño(){
-        return 0;
+     public int Dano(Aldeanos atacar){
+       if (atacar instanceof Herrero) return (int)Math.round(Utensilios.getDano*0.01);
+  
+        if (atacar instanceof Explosivo) return (int)Math.round(Utensilios.getDano*0.15);
+               return Utensilios.getDano;        
     }
     
     

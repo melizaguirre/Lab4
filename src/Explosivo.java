@@ -33,8 +33,11 @@ public class Explosivo extends Aldeanos {
         return "Explosivo{" + super.toString()+ "ataque=" + ataque + '}';
     }
      
-    public int daño(){
-        return 0;
+     public int Dano(Aldeanos atacar){
+       if (atacar instanceof Herrero) return (int)Math.round(Utensilios.getDano*0.05);
+  
+        if (atacar instanceof Agronomo) return (int)Math.round(Utensilios.getDano*0.01);
+               return Utensilios.getDano;        
     }
     
     
