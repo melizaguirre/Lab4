@@ -32,6 +32,11 @@ public class SuperGranjero extends Aldeanos{
     public String toString() {
         return "SuperGranjero{" +super.toString() + "ataque=" + ataque + '}';
     }
+     
+    public int daño(){
+        return 0;
+    }
+    
     
     
 }

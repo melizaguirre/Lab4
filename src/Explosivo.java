@@ -32,6 +32,11 @@ public class Explosivo extends Aldeanos {
     public String toString() {
         return "Explosivo{" + super.toString()+ "ataque=" + ataque + '}';
     }
+     
+    public int daño(){
+        return 0;
+    }
+    
     
     
 }

@@ -8,7 +8,7 @@
  *
  * @author BAC
  */
-public class Aldeanos {
+public abstract class Aldeanos {
     private String nombre;
     private String apellido;
     private int edad;
@@ -68,6 +68,9 @@ public class Aldeanos {
         return "Aldenanos{" + "nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", vida=" + vida + ", rango=" + rango + '}';
     }
     
+    public int daño(){
+        return 0;
+    }
     
 
     

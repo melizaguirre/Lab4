@@ -32,5 +32,10 @@ public class Herrero extends Aldeanos{
     public String toString() {
         return "Herrero{" + super.toString()+ "utensilios=" + utensilios + '}';
     }
+     
+    public int daño(){
+        return 0;
+    }
+    
     
 }

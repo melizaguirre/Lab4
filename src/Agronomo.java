@@ -31,6 +31,11 @@ public class Agronomo extends Aldeanos{
     public String toString() {
         return "Agronomo{" + super.toString()+ "ataque=" + ataque + '}';
     }
+     
+    public int daño(){
+        return 0;
+    }
+    
     
     
     

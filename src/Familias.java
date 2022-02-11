@@ -9,5 +9,6 @@
  * @author BAC
  */
 public class Familias {
+    private String apellido;
     
 }

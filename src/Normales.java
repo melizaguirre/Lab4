@@ -34,6 +34,10 @@ public class Normales extends Aldeanos{
     public String toString() {
         return "Normales{" + super.toString() + "ataque=" + ataque + '}';
     }
+     
+    public int daño(){
+        return 0;
+    }
     
     
 }
