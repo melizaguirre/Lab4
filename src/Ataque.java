@@ -10,12 +10,17 @@
  */
 public class Ataque {
     private String nombre; 
-    private int dano;
+    private int ataque;
+    
     public Ataque(){}
+    
+    public Ataque (int ataque){
+        this.ataque= ataque;
+    }
 
-    public Ataque(String nombre, int dano) {
+    public Ataque(String nombre, int ataque) {
         this.nombre = nombre;
-        this.dano = dano;
+        this.ataque = ataque;
     }
 
     public String getNombre() {
@@ -26,13 +31,19 @@ public class Ataque {
         this.nombre = nombre;
     }
 
-    public int getDano() {
-        return dano;
+    public int getAtaque() {
+        return ataque;
     }
 
-    public void setDano(int dano) {
-        this.dano = dano;
+    public void setAttaque(int ataque) {
+        this.ataque = ataque;
     }
+
+    @Override
+    public String toString() {
+        return "Ataque{" + "nombre=" + nombre + ", Ataque=" + ataque + '}';
+    }
+    
     
     
 }

@@ -13,7 +13,7 @@ public class Pacifista extends Aldeanos{
 
     public Pacifista(String nombre, String apellido, int edad, int vida, String rango) {
         super(nombre, apellido, edad, vida, rango);
-        this.discursoPaz.setNombre(nombreAtaque);
+        this.discursoPaz.setNombre(nombre);
     }
     
 }
