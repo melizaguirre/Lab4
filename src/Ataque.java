@@ -9,7 +9,7 @@
  * @author BAC
  */
 public class Ataque {
-    private String nombre; 
+    private String ataqueNombre; 
     private int ataque;
     
     public Ataque(){}
@@ -18,32 +18,31 @@ public class Ataque {
         this.ataque= ataque;
     }
 
-    public Ataque(String nombre, int ataque) {
-        this.nombre = nombre;
+    public Ataque(String ataqueNombre, int ataque) {
+        this.ataqueNombre = ataqueNombre;
         this.ataque = ataque;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getAtaqueNombre() {
+        return ataqueNombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setAtaqueNombre(String ataqueNombre) {
+        this.ataqueNombre = ataqueNombre;
     }
 
     public int getAtaque() {
         return ataque;
     }
 
-    public void setAttaque(int ataque) {
+    public void setAtaque(int ataque) {
         this.ataque = ataque;
     }
 
     @Override
     public String toString() {
-        return "Ataque{" + "nombre=" + nombre + ", Ataque=" + ataque + '}';
+        return "Ataque{" + "ataqueNombre=" + ataqueNombre + ", ataque=" + ataque + '}';
     }
-    
-    
-    
+
+   
 }

@@ -10,11 +10,30 @@
  */
 public class Normales extends Aldeanos{
     
-    private Ataque punoLimpio = new Ataque();
+    private PunoLimpio ataque = new PunoLimpio();
     
     public Normales (String nombre, String apellido, int edad, int vida, String rango){
         super (nombre, apellido, edad, vida, rango);
         
     }
+     public Normales (String ataqueNombre, String nombre, String apellido, int edad, int vida, String rango){
+        super (nombre, apellido, edad, vida, rango);
+        this.ataque.setAtaqueNombre(ataqueNombre);
+        
+    }
+
+    public PunoLimpio getAtaque() {
+        return ataque;
+    }
+
+    public void setAtaque(PunoLimpio ataque) {
+        this.ataque = ataque;
+    }
+
+    @Override
+    public String toString() {
+        return "Normales{" + super.toString() + "ataque=" + ataque + '}';
+    }
+    
     
 }

@@ -9,11 +9,10 @@
  * @author BAC
  */
 public class Pacifista extends Aldeanos{
-    Ataque discursoPaz = new Ataque();
 
     public Pacifista(String nombre, String apellido, int edad, int vida, String rango) {
         super(nombre, apellido, edad, vida, rango);
-        this.discursoPaz.setNombre(nombre);
+        
     }
     
 }

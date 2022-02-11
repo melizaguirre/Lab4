@@ -8,8 +8,6 @@
  *
  * @author BAC
  */
-public class Discurso extends Ataque{
-     public Discurso (){
-        super();
-    }
+public class Familias {
+    
 }
