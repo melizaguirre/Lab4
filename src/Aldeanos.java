@@ -8,17 +8,19 @@
  *
  * @author BAC
  */
-public class Aldenanos {
+public class Aldeanos {
     private String nombre;
     private String apellido;
     private int edad;
     private int vida;
+    private String rango;
 
-    public Aldenanos(String nombre, String apellido, int edad, int vida) {
+    public Aldeanos(String nombre, String apellido, int edad, int vida, String rango) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
         this.vida = vida;
+        this.rango = rango;
     }
 
     public String getNombre() {
@@ -53,10 +55,21 @@ public class Aldenanos {
         this.vida = vida;
     }
 
+    public String getRango() {
+        return rango;
+    }
+
+    public void setRango(String rango) {
+        this.rango = rango;
+    }
+
     @Override
     public String toString() {
-        return "Aldenanos{" + "nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", vida=" + vida + '}';
+        return "Aldenanos{" + "nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", vida=" + vida + ", rango=" + rango + '}';
     }
+    
+    
+
     
     
     
